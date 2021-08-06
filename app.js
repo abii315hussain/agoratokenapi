@@ -16,11 +16,11 @@ app.use(bodyparser.json());
 const port=require('./db/server')
 
 
-app.get('/',(req,res)=>{
-    res.send(req.body.name);
-})
+// app.get('/',(req,res)=>{
+//     res.send(req.body.name);
+// })
 
-app.post('/agora_access_token', (req, res) => {
+app.post('/get_access_token', (req, res) => {
  
     const appID = 'a6b42ead96b54e2a897239f272892a6e';
     const appCertificate = '2eec4082e6dd47d38893a1b7e0ce9797';
